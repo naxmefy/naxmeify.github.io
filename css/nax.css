@@ -56,9 +56,18 @@ header nav ul li a {
     border-radius: 24px;
 }
 
+header nav ul li a.activeSmall {
+    color: #5a5a5a;
+}
+
 header nav ul li a.contact {
     color: white;
     background-color: #e66a6a;
+}
+
+header nav ul li a.contact.activeSmall {
+    color: white;
+    background-color: #7fd689;
 }
 
 #top-shadow {
@@ -75,7 +84,6 @@ header nav ul li a.contact {
 }
 
 #content {
-    min-height: 300px;
     margin-top:100px;
 }
 
@@ -108,6 +116,11 @@ footer .links a {
     border-radius: 24px;
     color: #fff;
     background-color: #e66a6a;
+}
+
+footer .links a.activeSmall {
+    color: white;
+    background-color: #7fd689;
 }
 
 footer .avatar {

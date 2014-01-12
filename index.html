@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="naxmeify">
   <head>
     <meta charset="utf-8">
     <title>Naxmeify</title>
@@ -33,17 +33,17 @@
             
             <nav>
                 <ul>
-                    <li><a href="#!/about">about me</a></li>
-                    <li><a href="#!/work">my work</a></li>
-                    <li><a class="contact" href="#!/contact">contact me</a></li>
+                    <li><a href="#!/about" ng-class="{activeSmall:part=='about'}">about me</a></li>
+                    <li><a href="#!/work" ng-class="{activeSmall:part=='work'}">my work</a></li>
+                    <li><a class="contact" href="#!/contact" ng-class="{activeSmall:part=='contact'}">contact me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <div id="top-shadow"></div>
-    <section id="content">
+    <div id="content" ng-view>
         
-    </section>
+    </div>
     
     <footer>
         <div class="wrap">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="links">
-                        <a id="quoteBtn" href="#" onclick="showCont()">request a quote</a>
+                        <a id="quoteBtn" href="#!/contact" ng-class="{activeSmall:part=='contact'}">request a quote</a>
                     </div>
                 </div>
             </div>
@@ -98,5 +98,10 @@
          });
         })
     </script>
+    
+    <script src="js/app/angular.min.js"></script>
+    
+    <script src="js/app/app.js"></script>
+    <script src="js/app/controllers.js"></script>
   </body>
 </html>
