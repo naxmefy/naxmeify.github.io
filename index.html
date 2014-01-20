@@ -7,9 +7,6 @@
     
     <!-- Loading Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
     
     <!-- WebIcons -->
     <link rel="stylesheet" href="icons/webicons.css">
@@ -25,68 +22,72 @@
     <![endif]-->
   </head>
   <body>
-    <header class="navbar navbar-fixed-top">
-        <div class="wrap navbar-inner">
-            <a href="/#!">
-                <img class="logo" src="images/logo.png" alt="Naxmeify Logo">
-            </a>
-            
-            <nav>
-                <ul>
-                    <li><a href="#!/about" ng-class="{activeSmall:part=='about'}">about me</a></li>
-                    <li><a href="#!/work" ng-class="{activeSmall:part=='work'}">my work</a></li>
-                    <li><a class="contact" href="#!/contact" ng-class="{activeSmall:part=='contact'}">contact me</a></li>
-                </ul>
-            </nav>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#!/">
+              <img class="img-responsive" src="images/logo.png" alt="Naxmeify Logo">
+          </a>
         </div>
-    </header>
-    <div id="top-shadow"></div>
-    <div id="content" ng-view>
-        
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#!/" ng-class="{activeSmall:part=='home'}">home</a></li>
+            <li><a href="#!/skills" ng-class="{activeSmall:part=='skills'}">my skills</a></li>
+            <li><a href="#!/work" ng-class="{activeSmall:part=='work'}">my work</a></li>
+            <li><a href="#!/contact" class="contact" ng-class="{activeSmall:part=='contact'}">contact me</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
+    <div id="top-shadow"></div>
+
+    <div class="container" ng-view style="min-height: 400px;"></div>
     
-    <footer>
-        <div class="wrap">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="externalLinks">
-                        <ul>
-                            <li><a class="webicon youtube large" href="http://www.youtube.com/naxmeify">YouTube</a></li>
-                            <li><a class="webicon github large" href="https://github.com/Naxmeify">Github</a></li>
-                            <li><a class="webicon twitter large" href="https://twitter.com/Naxmeify">Twitter</a></li>
-                            <li><a class="webicon googleplus large" href="https://plus.google.com/104422916304341747149" rel="publisher">Google+</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="avatar">
-                        <img src="images/avatar.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="links">
-                        <a id="quoteBtn" href="#!/contact" ng-class="{activeSmall:part=='contact'}">request a quote</a>
-                    </div>
+    <div class="container" id="footer">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="externalLinks">
+                    <ul>
+                        <li><a class="webicon youtube large" href="http://www.youtube.com/naxmeify">YouTube</a></li>
+                        <li><a class="webicon github large" href="https://github.com/Naxmeify">Github</a></li>
+                        <li><a class="webicon twitter large" href="https://twitter.com/Naxmeify">Twitter</a></li>
+                        <li><a class="webicon googleplus large" href="https://plus.google.com/104422916304341747149" rel="publisher">Google+</a></li>
+                    </ul>
                 </div>
             </div>
-            <div style="clear:both"></div>
-            <div class="copyright">Copyright &copy; 2013 Nax(meify) - Matt Neundorf</div>
+            <div class="col-md-4">
+                <div class="avatar">
+                    <img src="images/avatar.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="links">
+                    <a id="quoteBtn" href="#!/contact" ng-class="{activeSmall:part=='contact'}">request a quote</a>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div style="clear:both"></div>
+        <div class="copyright">Copyright &copy; 2013 Nax(meify) - Matt Neundorf</div>
+    </div>
+    
 
 
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.autogrow-textarea.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script>
         $(document).ready(function(){
@@ -104,6 +105,7 @@
     <script src="js/app/angular.min.js"></script>
     
     <script src="js/app/app.js"></script>
+    <script src="js/app/services.js"></script>
     <script src="js/app/controllers.js"></script>
   </body>
 </html>

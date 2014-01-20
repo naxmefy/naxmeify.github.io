@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Programmiersprachen",
+    "items":[
+      {"name":"Objective-C", "value": 100},
+      {"name":"PHP", "value": 60},
+      {"name":"Java", "value": 80},
+      {"name":"JavaScript", "value": 100},
+      {"name":"CoffeeScript", "value": 100},
+      {"name":"Ruby", "value": 40},
+      {"name":"Python", "value": 40}
+    ]
+  },
+  {
+    "name": "Applikationen",
+    "items":[
+      {"name":"Xcode", "value": 100},
+      {"name":"Eclipse", "value": 75}
+    ]
+  },
+  {
+    "name": "Content Management Systeme",
+    "items":[
+      {"name":"Wordpress", "value": 90},
+      {"name":"Joomla", "value": 60},
+      {"name":"Drupal", "value": 30}
+    ]
+  }
+]

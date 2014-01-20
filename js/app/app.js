@@ -1,12 +1,13 @@
 ﻿'use strict';
+
 var app = angular.module('naxmeify', []).
   config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
           when('/', { templateUrl: 'partials/index.html', activetab: 'home', controller: HomeCtrl }).
-          when('/about', {
-              templateUrl: 'partials/about.html',
-              controller: AboutCtrl,
-              activetab: 'about'
+          when('/skills', {
+              templateUrl: 'partials/skills.html',
+              controller: SkillsCtrl,
+              activetab: 'skills'
           }).
           when('/work', {
               templateUrl: 'partials/work.html',
@@ -28,15 +29,23 @@ var app = angular.module('naxmeify', []).
       });
 
 
-      $scope.save = function () {
-          $scope.loaded = true;
-          $scope.process = true;
-          $http.post('/home/sendemail', $scope.message).success(function () {
-              $scope.success = true;
-              $scope.process = false;
-          });
-      };
+      // $scope.save = function () {
+      //     $scope.loaded = true;
+      //     $scope.process = true;
+      //     $http.post('/home/sendemail', $scope.message).success(function () {
+      //         $scope.success = true;
+      //         $scope.process = false;
+      //     });
+      // };
   }]);
+
+app.config(['$httpProvider', function ($httpProvider) {
+  //Reset headers to avoid OPTIONS request (aka preflight)
+  $httpProvider.defaults.headers.common = {};
+  $httpProvider.defaults.headers.post = {};
+  $httpProvider.defaults.headers.put = {};
+  $httpProvider.defaults.headers.patch = {};
+}]);
 
 app.config(['$locationProvider', function($location) {
     $location.hashPrefix('!');
