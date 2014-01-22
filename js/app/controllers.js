@@ -61,7 +61,7 @@ function ContactCtrl($scope, $http, $timeout) {
 
    $scope.sendMail = function() {
 
-    var url = 'http://neundorf.vela.uberspace.de/nax/mailapi/sendmail.php?';
+    var url = '/mailapi/sendmail.php?';
     url += 'name='+$scope.name;
     url += '&email='+$scope.email;
     url += '&subject='+$scope.subject;
