@@ -79,6 +79,10 @@ body {
     display: none;
 }
 
+#footer {
+	margin-top: 20px;
+}
+
 .externalLinks {
     text-align:center;
     margin: 73.5px 0;
