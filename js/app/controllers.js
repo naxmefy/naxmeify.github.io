@@ -1,10 +1,11 @@
 ﻿'use strict';
 
-function HomeCtrl($scope, $http) {
-  
+function HomeCtrl($scope, $http, $rootScope) {
+  $rootScope.sitetitle = "Naxmeify";
 }
 
-function WorkCtrl($scope, $http) {
+function WorkCtrl($scope, $http, $rootScope) {
+  $rootScope.sitetitle = "Naxmeify | my works";
   $http({method: 'GET', url: '/data/works.json'}).
   success(function(data, status, headers, config) {
     // console.log(data);
@@ -34,7 +35,8 @@ function WorkCtrl($scope, $http) {
   });
 }
 
-function SkillsCtrl($scope, $http) {
+function SkillsCtrl($scope, $http, $rootScope) {
+  $rootScope.sitetitle = "Naxmeify | my skills";
   $http({method: 'GET', url: '/data/skills.json'}).
   success(function(data, status, headers, config) {
     // console.log(data);
@@ -56,7 +58,8 @@ function SkillsCtrl($scope, $http) {
          return "progress-bar-danger";
     }
 }
-function ContactCtrl($scope, $http, $timeout) {
+function ContactCtrl($scope, $http, $timeout, $rootScope) {
+   $rootScope.sitetitle = "Naxmeify | contact me";
    $('#contactMessage').css('overflow', 'hidden').autogrow();
 
    $scope.sendMail = function() {

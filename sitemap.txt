@@ -1,4 +1,4 @@
-http://nax.me/
-http://nax.me/#!/skills
-http://nax.me/#!/work
-http://nax.me/#!/contact
+http://www.nax.me/
+http://www.nax.me/skills
+http://www.nax.me/work
+http://www.nax.me/contact
