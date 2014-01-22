@@ -37,10 +37,10 @@ function WorkCtrl($scope, $http) {
 function SkillsCtrl($scope, $http) {
   $http({method: 'GET', url: '/data/skills.json'}).
   success(function(data, status, headers, config) {
-    console.log(data);
-    console.log(status);
-    console.log(headers);
-    console.log(config);
+    // console.log(data);
+    // console.log(status);
+    // console.log(headers);
+    // console.log(config);
     $scope.skillareas = data;
   }).
   error(function(data, status, headers, config) {

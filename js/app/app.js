@@ -48,5 +48,5 @@ app.config(['$httpProvider', function ($httpProvider) {
 }]);
 
 app.config(['$locationProvider', function($location) {
-    $location.hashPrefix('!');
+    $location.html5Mode(true).hashPrefix('!');
 }]);
