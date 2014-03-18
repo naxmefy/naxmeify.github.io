@@ -14,14 +14,21 @@ function HomeCtrl($scope, $http, $rootScope) {
     console.log("errr");
   });
 
-   $scope.progressBarType= function(skillValue){
-     if(skillValue>80)
-            return "progress-bar-success"
-     else if(skillValue>50)
-         return "progress-bar-warning";
-     else
-         return "progress-bar-danger";
-    }
+  $scope.progressBarType= function(skillValue){
+    if(skillValue>80)
+          return "progress-bar-success"
+    else if(skillValue>50)
+       return "progress-bar-warning";
+    else
+       return "progress-bar-danger";
+  }
+
+  $scope.mattimages = [1,2,3,4,5];
+
+  $('.carousel').carousel();
+  $('.carousel-control').click(function(e){
+    e.preventDefault();
+  });
 }
 
 function WorkCtrl($scope, $http, $rootScope) {

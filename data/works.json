@@ -1,5 +1,5 @@
 [
-  {"name": "roflmao", "types": ["rofl"], "image": "images/matt.jpg", "description": "orem ipsum dolor sit amet, consetetur sadipscing elitr"},
-  {"name": "asdasd", "types": ["rofl", "lol"], "image": "images/matt.jpg", "description": "orem ipsum dolor sit amet, consetetur sadipscing elitr"},
-  {"name": "roflasdasdasdasdmao", "types": ["lol"], "image": "images/matt.jpg", "description": "orem ipsum dolor sit amet, consetetur sadipscing elitr"}
+  {"name": "roflmao", "types": ["rofl"], "image": "images/matt/matt-1.jpg", "description": "orem ipsum dolor sit amet, consetetur sadipscing elitr"},
+  {"name": "asdasd", "types": ["rofl", "lol"], "image": "images/matt/matt-1.jpg", "description": "orem ipsum dolor sit amet, consetetur sadipscing elitr"},
+  {"name": "roflasdasdasdasdmao", "types": ["lol"], "image": "images/matt/matt-1.jpg", "description": "orem ipsum dolor sit amet, consetetur sadipscing elitr"}
 ]

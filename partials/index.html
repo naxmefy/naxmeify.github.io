@@ -1,6 +1,28 @@
 <div class="row">
   <div class="col-md-3">
-    <img src="images/matt.jpg" alt="..." class="img-thumbnail img-responsive">
+    <!--<img src="images/matt/matt.jpg" alt="..." class="img-thumbnail img-responsive">-->
+    <div id="matt-images" class="carousel slide" data-ride="carousel">
+      <!-- Indicators
+      <ol class="carousel-indicators">
+        <li data-target="#matt-images" data-slide-to="{{ mattimage-1 }}" class="" ng-repeat="mattimage in mattimages" ng-class="($index==0)? 'active' : ''"></li>
+      </ol>
+       -->
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item" ng-repeat="mattimage in mattimages" ng-class="($index==0)? 'active' : ''" style="text-align: center;">
+          <img ng-src="images/matt/matt-{{ mattimage }}.jpg" alt="Matt" style="display: block;margin-left: auto;margin-right: auto;">
+          <div class="carousel-caption"></div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#matt-images" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#matt-images" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
   </div>
   <div class="col-md-5">
     <h2>developer and consultant</h2>
