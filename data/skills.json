@@ -8,7 +8,14 @@
       {"name":"JavaScript", "value": 100},
       {"name":"CoffeeScript", "value": 100},
       {"name":"Ruby", "value": 60},
-      {"name":"Python", "value": 40}
+      {"name":"Python", "value": 40},
+      {"name":"C", "value": 70},
+      {"name":"C++", "value": 50},
+      {"name":"HTML5/CSS3", "value": 95},
+      {"name":"Lua", "value": 60},
+      {"name":"C#", "value": 70},
+      {"name":"Basic", "value": 50},
+      {"name":"Erlang", "value": 0}
     ]
   },
   {
