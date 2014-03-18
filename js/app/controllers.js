@@ -8,7 +8,7 @@ function HomeCtrl($scope, $http, $rootScope) {
     // console.log(status);
     // console.log(headers);
     // console.log(config);
-    $scope.skills = data[0].items;
+    $scope.skills = shuffle(data[0].items).slice(5);
   }).
   error(function(data, status, headers, config) {
     console.log("errr");
@@ -111,4 +111,26 @@ function ContactCtrl($scope, $http, $timeout, $rootScope) {
       $('#success').hide();
       $('#contactform').show();
    };
+}
+
+function shuffle(array) {
+  var currentIndex = array.length
+    , temporaryValue
+    , randomIndex
+    ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
