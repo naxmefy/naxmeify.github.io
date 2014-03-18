@@ -2,6 +2,26 @@
 
 function HomeCtrl($scope, $http, $rootScope) {
   $rootScope.sitetitle = "Naxmeify";
+  $http({method: 'GET', url: '/data/skills.json'}).
+  success(function(data, status, headers, config) {
+    // console.log(data);
+    // console.log(status);
+    // console.log(headers);
+    // console.log(config);
+    $scope.skills = data[0].items;
+  }).
+  error(function(data, status, headers, config) {
+    console.log("errr");
+  });
+
+   $scope.progressBarType= function(skillValue){
+     if(skillValue>80)
+            return "progress-bar-success"
+     else if(skillValue>50)
+         return "progress-bar-warning";
+     else
+         return "progress-bar-danger";
+    }
 }
 
 function WorkCtrl($scope, $http, $rootScope) {
