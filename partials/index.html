@@ -30,13 +30,13 @@
     <dl class="dl-horizontal">
       <div ng-repeat="skill in skills">
         <dt><span class="label label-info">{{ skill.name }}</span></dt>
-        <dd>
-          <div class="progress progress-striped">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ skill.value }}%">
-              <span class="sr-only">{{ skill.value }}% Complete (success)</span>
-            </div>
+      <dd>
+        <div class="progress progress-striped">
+          <div class="progress-bar" ng-class='progressBarType(skill.value)' role="progressbar" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ skill.value }}%">
+            <span class="sr-only">{{ skill.value }}% Complete (success)</span>
           </div>
-        </dd>
+        </div>
+      </dd>
       </div>
 
       <dt><span class="label label-info">Java</span></dt>
