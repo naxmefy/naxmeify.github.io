@@ -3,11 +3,11 @@
     "name": "Programmiersprachen",
     "items":[
       {"name":"Objective-C", "value": 100},
-      {"name":"PHP", "value": 60},
+      {"name":"PHP", "value": 75},
       {"name":"Java", "value": 80},
       {"name":"JavaScript", "value": 100},
       {"name":"CoffeeScript", "value": 100},
-      {"name":"Ruby", "value": 40},
+      {"name":"Ruby", "value": 60},
       {"name":"Python", "value": 40}
     ]
   },
@@ -16,6 +16,16 @@
     "items":[
       {"name":"Xcode", "value": 100},
       {"name":"Eclipse", "value": 75}
+    ]
+  },
+  {
+    "name": "Web Frameworks",
+    "items": [
+      {"name":"Rails", "value": 60 },
+      {"name":"Express", "value": 100},
+      {"name":"Zend", "value": 70},
+      {"name":"CodeIgniter", "value": 90},
+      {"name":"Django", "value": 0}
     ]
   },
   {
