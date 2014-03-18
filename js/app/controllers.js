@@ -8,7 +8,7 @@ function HomeCtrl($scope, $http, $rootScope) {
     // console.log(status);
     // console.log(headers);
     // console.log(config);
-    $scope.skills = shuffle(data[0].items).slice(5);
+    $scope.skills = shuffle(data[0].items).slice(0, 5);
   }).
   error(function(data, status, headers, config) {
     console.log("errr");
