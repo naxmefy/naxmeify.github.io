@@ -15,7 +15,19 @@
     "name": "Applikationen",
     "items":[
       {"name":"Xcode", "value": 100},
-      {"name":"Eclipse", "value": 75}
+      {"name":"Eclipse", "value": 75},
+      {"name":"IntelliJ IDEA", "value": 80},
+      {"name":"Netbeans", "value": 40},
+      {"name":"RubyMine", "value": 60},
+      {"name":"PHPStorm", "value": 30},
+      {"name":"WebStorm", "value": 50},
+      {"name":"Zend Studio", "value": 60},
+      {"name":"Aptana", "value": 80},
+      {"name":"Sublime Text 2", "value": 100},
+      {"name":"Photoshop", "value": 30},
+      {"name":"Illustrator", "value": 20},
+      {"name":"Flash", "value": 20},
+      {"name":"Unity", "value": 60}
     ]
   },
   {
@@ -25,7 +37,9 @@
       {"name":"Express", "value": 100},
       {"name":"Zend", "value": 70},
       {"name":"CodeIgniter", "value": 90},
-      {"name":"Django", "value": 0}
+      {"name":"Django", "value": 0},
+      {"name":"GWT", "value": 60},
+      {"name":"Spring", "value": 10}
     ]
   },
   {
@@ -33,7 +47,15 @@
     "items":[
       {"name":"Wordpress", "value": 90},
       {"name":"Joomla", "value": 60},
-      {"name":"Drupal", "value": 30}
+      {"name":"Drupal", "value": 30},
+      {"name":"Ionize", "value": 20},
+      {"name":"Nodize", "value": 40}
+    ]
+  },
+  {
+    "name": "Game Engines",
+    "items": [
+      {"name":"Unity", "value": 60}
     ]
   }
 ]
