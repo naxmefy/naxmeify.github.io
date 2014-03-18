@@ -22,6 +22,7 @@ Enjoy Webicons!
 * Branch
 * Coderwall
 * Adobe Creative Cloud
+* DeviantArt
 * Dribbble
 * Dropbox
 * Evernote
@@ -68,10 +69,13 @@ Enjoy Webicons!
 * StackOverflow
 * StumbleUpon!
 * SVN
+* Svtle
 * Tent
 * Trip Advisor
 * Tumblr
 * Twitter
+* Viadeo
+* Vine
 * Vimeo
 * Windows
 * WordPress
@@ -88,6 +92,7 @@ Enjoy Webicons!
 
 Here are some links to great work done by fans of Webicons.
 
+* [Webicons WordPress Plugin](https://github.com/dtbaker/wordpress-webicons) by dtbaker
 * [Flag Webicons](https://github.com/seanherron/Flag-Webicons) by Sean Herron
 * [Gov Webicons](https://github.com/seanherron/Gov-Webicons) by Sean Herron
 

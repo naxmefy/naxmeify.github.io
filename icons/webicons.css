@@ -34,6 +34,26 @@
   -webkit-border-radius: 6px;
   border-radius: 6px; }
 
+/* restore webicons accessibility for print */
+@media print {
+  * {
+      background: transparent !important;
+      color: #000 !important;
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+  .webicon {
+    text-indent: 0;
+    width: auto !important;
+    height: auto !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+  }
+}
+
 .no-svg .webicon.f500px {
   background: url("webicons/webicon-f500px-m.png"); }
 
@@ -177,6 +197,18 @@
 
 .svg .webicon.dribbble {
   background: url("webicons/webicon-dribbble.svg"); }
+
+.no-svg .webicon.deviantart {
+  background: url("webicons/webicon-deviantart-m.png"); }
+
+.no-svg .webicon.deviantart.large {
+  background: url("webicons/webicon-deviantart.png"); }
+
+.no-svg .webicon.deviantart.small {
+  background: url("webicons/webicon-deviantart-s.png"); }
+
+.svg .webicon.deviantart {
+  background: url("webicons/webicon-deviantart.svg"); }
 
 .no-svg .webicon.dropbox {
   background: url("webicons/webicon-dropbox-m.png"); }
@@ -706,6 +738,18 @@
 .svg .webicon.stumbleupon {
   background: url("webicons/webicon-stumbleupon.svg"); }
 
+.no-svg .webicon.svtle {
+  background: url("webicons/webicon-svtle-m.png"); }
+
+.no-svg .webicon.svtle.large {
+  background: url("webicons/webicon-svtle.png"); }
+
+.no-svg .webicon.svtle.small {
+  background: url("webicons/webicon-svtle-s.png"); }
+
+.svg .webicon.svtle {
+  background: url("webicons/webicon-svtle.svg"); }
+
 .no-svg .webicon.svn {
   background: url("webicons/webicon-svn-m.png"); }
 
@@ -765,6 +809,30 @@
 
 .svg .webicon.twitter {
   background: url("webicons/webicon-twitter.svg"); }
+
+.no-svg .webicon.viadeo {
+  background: url("webicons/webicon-viadeo-m.png"); }
+
+.no-svg .webicon.viadeo.large {
+  background: url("webicons/webicon-viadeo.png"); }
+
+.no-svg .webicon.viadeo.small {
+  background: url("webicons/webicon-viadeo-s.png"); }
+
+.svg .webicon.viadeo {
+  background: url("webicons/webicon-viadeo.svg"); }
+
+.no-svg .webicon.vine {
+  background: url("webicons/webicon-vine-m.png"); }
+
+.no-svg .webicon.vine.large {
+  background: url("webicons/webicon-vine.png"); }
+
+.no-svg .webicon.vine.small {
+  background: url("webicons/webicon-vine-s.png"); }
+
+.svg .webicon.vine {
+  background: url("webicons/webicon-vine.svg"); }
 
 .no-svg .webicon.vimeo {
   background: url("webicons/webicon-vimeo-m.png"); }
