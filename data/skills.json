@@ -27,7 +27,7 @@
       {"name":"Netbeans", "value": 40},
       {"name":"RubyMine", "value": 60},
       {"name":"PHPStorm", "value": 30},
-      {"name":"WebStorm", "value": 50},
+      {"name":"WebStorm", "value": 70},
       {"name":"Zend Studio", "value": 60},
       {"name":"Aptana", "value": 80},
       {"name":"Sublime Text 2", "value": 100},
@@ -44,7 +44,8 @@
       {"name":"Express", "value": 100},
       {"name":"Zend", "value": 70},
       {"name":"CodeIgniter", "value": 90},
-      {"name":"Django", "value": 0},
+      {"name":"Django", "value": 5},
+      {"name":"Flask", "value": 15},
       {"name":"GWT", "value": 60},
       {"name":"Spring", "value": 10}
     ]
@@ -56,13 +57,20 @@
       {"name":"Joomla", "value": 60},
       {"name":"Drupal", "value": 30},
       {"name":"Ionize", "value": 20},
-      {"name":"Nodize", "value": 40}
+      {"name":"Nodize", "value": 40},
+      {"name":"RefineryCMS", "value": 30}
     ]
   },
   {
     "name": "Game Engines",
     "items": [
-      {"name":"Unity", "value": 60}
+      {"name":"Unity", "value": 60},
+      {"name":"PyGame", "value": 40},
+      {"name":"jMonkeyEngine", "value": 10},
+      {"name":"LWJGL", "value": 10},
+      {"name":"CryEngine", "value": 20},
+      {"name":"UAGE", "value": 90},
+      {"name":"Unreal Engine", "value": 20}
     ]
   }
 ]
