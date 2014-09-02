@@ -1,0 +1,19 @@
+{
+  "restartable": "rs",
+  "watch": ["server.js"],
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "app",
+    "bin",
+    "public",
+    "test",
+    "tmp"
+  ],
+  "verbose": true,
+  "env": {
+    "NODE_ENV": "development",
+    "DEBUG": "naxmeify,naxmeify:*"
+  },
+  "ext": "js json coffee jade styl"
+}
