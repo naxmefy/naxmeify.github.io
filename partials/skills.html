@@ -2,7 +2,7 @@
   <div class="col-md-9">
     <div class="row" ng-repeat="skillarea in skillareas">
       <h3 id="skill_{{ $index }}">{{ skillarea.name }}</h3>
-      <dl class="dl-horizontal" ng-repeat="skill in skillarea.items">
+      <dl class="dl-horizontal" ng-repeat="skill in skillarea.items | filter: searchText">
           <dt><span class="label label-info">{{ skill.name }}</span></dt>
           <dd>
             <div class="progress progress-striped">
@@ -15,12 +15,17 @@
     </div>
   </div>
   <div class="col-md-3">
-    <div class="sidebar hidden-print hidden-xs hidden-sm affix">
-      <ul class="nav">
-        <li ng-repeat="skillarea in skillareas">
-          <a href="" scroll-to="skill_{{ $index }}">{{ skillarea.name }}</a>
-        </li>
-      </ul>
+    <div class="sidebar hidden-print hidden-xs hidden-sm affix" style="padding-left: 20px;">
+      <div class="row">
+        <input type="text" class="form-control" ng-model="searchText" placeholder="Search...">
+      </div>
+      <div class="row">
+        <ul class="nav">
+          <li ng-repeat="skillarea in skillareas">
+            <a href="" scroll-to="skill_{{ $index }}">{{ skillarea.name }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

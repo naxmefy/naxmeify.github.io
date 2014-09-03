@@ -12,8 +12,8 @@ angular.module('naxmeify')
         $location.hash(location);
         $anchorScroll();
         setTimeout(function(){ 
-          window.scrollTo(window.pageXOffset, window.pageYOffset - 100);
-        },0);
+          window.scrollTo(window.pageXOffset, window.pageYOffset - 120);
+        }, 0);
     });
 
   };

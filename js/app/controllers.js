@@ -71,18 +71,24 @@ function SkillsCtrl($scope, $http, $rootScope) {
     // console.log(headers);
     // console.log(config);
     $scope.skillareas = data;
+
+    $('body').scrollspy({ target: '.sidebar' });
   }).
   error(function(data, status, headers, config) {
     console.log("errr");
   });
 
-   $scope.progressBarType= function(skillValue){
-     if(skillValue>80)
-            return "progress-bar-success"
-     else if(skillValue>50)
-         return "progress-bar-warning";
-     else
-         return "progress-bar-danger";
+  $scope.progressBarType= function(skillValue){
+
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this).scrollspy('refresh')
+    });
+    if(skillValue>80)
+          return "progress-bar-success"
+    else if(skillValue>50)
+       return "progress-bar-warning";
+    else
+       return "progress-bar-danger";
     }
 }
 function ContactCtrl($scope, $http, $timeout, $rootScope) {
