@@ -22,6 +22,7 @@
     "name": "Applikationen",
     "items":[
       {"name":"Xcode", "value": 100},
+      {"name":"AppCode", "value": 90},
       {"name":"Eclipse", "value": 75},
       {"name":"IntelliJ IDEA", "value": 80},
       {"name":"Netbeans", "value": 40},
@@ -31,10 +32,18 @@
       {"name":"Zend Studio", "value": 60},
       {"name":"Aptana", "value": 80},
       {"name":"Sublime Text 2", "value": 100},
-      {"name":"Photoshop", "value": 30},
-      {"name":"Illustrator", "value": 20},
-      {"name":"Flash", "value": 20},
-      {"name":"Unity", "value": 60}
+      {"name":"Textmate", "value": 65},
+      {"name":"Adobe Photoshop", "value": 30},
+      {"name":"Adobe Illustrator", "value": 20},
+      {"name":"Adobe Premiere", "value": 20},
+      {"name":"Adobe After Effects", "value": 20},
+      {"name":"Adobe Flash", "value": 20},
+      {"name":"Autodesk Maya", "value": 10},
+      {"name":"Blender", "value": 10},
+      {"name":"Google Chrome", "value": 80},
+      {"name":"Mozilla Firefox", "value": 80},
+      {"name":"Apple Safari", "value": 70},
+      {"name":"Unity3D", "value": 60}
     ]
   },
   {
@@ -42,12 +51,15 @@
     "items": [
       {"name":"Rails", "value": 60 },
       {"name":"Express", "value": 100},
+      {"name":"Synth", "value": 20},
+      {"name":"Socket.io", "value": 100},
       {"name":"Zend", "value": 70},
       {"name":"CodeIgniter", "value": 90},
       {"name":"Django", "value": 5},
       {"name":"Flask", "value": 15},
+      {"name":"Sinatra", "value": 15},
       {"name":"GWT", "value": 60},
-      {"name":"Spring", "value": 10}
+      {"name":"Spring", "value": 40}
     ]
   },
   {
@@ -58,6 +70,10 @@
       {"name":"Drupal", "value": 30},
       {"name":"Ionize", "value": 20},
       {"name":"Nodize", "value": 40},
+      {"name":"PyroCMS", "value": 40},
+      {"name":"UliCMS", "value": 10},
+      {"name":"Ghost", "value": 10},
+      {"name":"Typo3", "value": 20},
       {"name":"RefineryCMS", "value": 30}
     ]
   },
@@ -66,10 +82,14 @@
     "items": [
       {"name":"Unity", "value": 60},
       {"name":"PyGame", "value": 40},
-      {"name":"jMonkeyEngine", "value": 10},
-      {"name":"LWJGL", "value": 10},
+      {"name":"jMonkeyEngine", "value": 20},
+      {"name":"LWJGL", "value": 20},
       {"name":"CryEngine", "value": 20},
+      {"name":"Unreal Engine", "value": 5},
       {"name":"UAGE", "value": 90},
+      {"name":"Pixi.js", "value": 40},
+      {"name":"Kiwi.js", "value": 40},
+      {"name":"Turbolenz", "value": 30},
       {"name":"Unreal Engine", "value": 20}
     ]
   }
