@@ -15,7 +15,8 @@ var path = __dirname;
 
 var server = express();
 livereload(server, {
-  watchDir: __dirname
+  watchDir: __dirname,
+  exts: ['html','css','js','json']
 });
 server.use(function (request, response, next) {
   response.header('X-Accept-Language', request.headers['accept-language']);
