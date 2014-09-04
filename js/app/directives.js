@@ -17,4 +17,26 @@ angular.module('naxmeify')
     });
 
   };
-});
+})
+.directive('typeOfCvEntry', [function () {
+    return {
+        restrict: 'A',
+        link: function (scope, iElement, iAttrs) {
+            console.log(iAttrs.typeOfCvEntry);
+            switch(iAttrs.typeOfCvEntry) {
+                case 'school':
+                    iElement.addClass('glyphicon-check');
+                    break;
+                case 'vocational_training':
+                    iElement.addClass('glyphicon-bookmark');
+                    break;
+                case 'study':
+                    iElement.addClass('glyphicon-book');
+                    break;
+                case 'job':
+                    iElement.addClass('glyphicon-briefcase');
+                    break;
+            }
+        }
+    };
+}]);

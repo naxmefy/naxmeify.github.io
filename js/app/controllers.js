@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 function HomeCtrl($scope, $http, $rootScope) {
-  $rootScope.sitetitle = "Naxmeify";
+  $rootScope.sitetitle = "Naxmeify - MRW Neundorf";
   $http({method: 'GET', url: '/data/skills.json'}).
   success(function(data, status, headers, config) {
     // console.log(data);
@@ -31,8 +31,8 @@ function HomeCtrl($scope, $http, $rootScope) {
   });
 }
 
-function WorkCtrl($scope, $http, $rootScope) {
-  $rootScope.sitetitle = "Naxmeify | my works";
+function WorksCtrl($scope, $http, $rootScope) {
+  $rootScope.sitetitle = "my works | Naxmeify";
   $http({method: 'GET', url: '/data/works.json'}).
   success(function(data, status, headers, config) {
     // console.log(data);
@@ -63,7 +63,7 @@ function WorkCtrl($scope, $http, $rootScope) {
 }
 
 function SkillsCtrl($scope, $http, $rootScope) {
-  $rootScope.sitetitle = "Naxmeify | my skills";
+  $rootScope.sitetitle = "my skills | Naxmeify";
   $http({method: 'GET', url: '/data/skills.json'}).
   success(function(data, status, headers, config) {
     // console.log(data);
@@ -91,8 +91,30 @@ function SkillsCtrl($scope, $http, $rootScope) {
        return "progress-bar-danger";
     }
 }
+
+function CVCtrl($scope, $http, $rootScope) {
+  $rootScope.sitetitle = "my cv | Naxmeify";
+  $http({method: 'GET', url: '/data/cv.json'}).
+  success(function(data, status, headers, config) {
+    // console.log(data);
+    // console.log(status);
+    // console.log(headers);
+    // console.log(config);
+    angular.forEach(data, function(value, key){
+      var parts = value.start.split('/');
+      value.date = new Date(parts[1],parts[0]-1);
+    });
+    $scope.entries = data;
+
+    console.log(new Date(2008,08));
+  }).
+  error(function(data, status, headers, config) {
+    console.log("errr");
+  });
+}
+
 function ContactCtrl($scope, $http, $timeout, $rootScope) {
-   $rootScope.sitetitle = "Naxmeify | contact me";
+   $rootScope.sitetitle = "contact me | Naxmeify";
    $('#contactMessage').css('overflow', 'hidden').autogrow();
 
    $scope.sendMail = function() {

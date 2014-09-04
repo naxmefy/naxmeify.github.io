@@ -1,0 +1,128 @@
+[
+  {
+    "name": "IGS Franzches Feld",
+    "type": "school",
+    "subject": "Schule",
+    "degree": "Realschulabschluss",
+    "description": "",
+    "start": "08/1997",
+    "end": "06/1997"
+  },
+  {
+    "name": "Otto-Bennemann-Schule",
+    "type": "school",
+    "subject": "Schule",
+    "degree": "Fachhochschulreife",
+    "description": "",
+    "start": "08/2007",
+    "end": "07/2008"
+  },
+  {
+    "name": "Teutloff Schule",
+    "type": "vocational_training",
+    "subject": "Berufsausbildung",
+    "degree": "Technicher Assistent für Informatik",
+    "description": "",
+    "start": "10/2003",
+    "end": "10/2005"
+  },
+  {
+    "name": "Ostfalia Wolfenbüttel",
+    "type": "study",
+    "subject": "Angewandte Informatik",
+    "degree": "",
+    "description": "",
+    "start": "09/2008",
+    "end": "02/2011"
+  },
+  {
+    "name": "Ostfalia Wolfenbüttel",
+    "type": "study",
+    "subject": "Medieninformatik",
+    "degree": "",
+    "description": "",
+    "start": "09/2008",
+    "end": ""
+  },
+  {
+    "name": "Bundeswehr",
+    "type": "job",
+    "subject": "S6-Soldat / Computeradministrator",
+    "degree": "",
+    "description": "",
+    "start": "01/2006",
+    "end": "05/2007"
+  },
+  {
+    "name": "CheckTec",
+    "type": "job",
+    "subject": "C++ Programmierer",
+    "degree": "",
+    "description": "",
+    "start": "07/2008",
+    "end": "09/2008"
+  },
+  {
+    "name": "simple-fax.de",
+    "type": "job",
+    "subject": "Web Programmierer",
+    "degree": "",
+    "description": "",
+    "start": "06/2011",
+    "end": "06/2012"
+  },
+  {
+    "name": "Internetagentur Löwenstark GmbH",
+    "type": "job",
+    "subject": "SEO, CRO & iOS App Entwickler",
+    "degree": "",
+    "description": "",
+    "start": "07/2012",
+    "end": "01/2013"
+  },
+  {
+    "name": "CodeFrog UG",
+    "type": "job",
+    "subject": "Java Entwickler",
+    "degree": "",
+    "description": "",
+    "start": "02/2013",
+    "end": "02/2014"
+  },
+  {
+    "name": "conLeos GmbH",
+    "type": "job",
+    "subject": "Java Web Entwickler",
+    "degree": "",
+    "description": "",
+    "start": "02/2014",
+    "end": "08/2014"
+  },
+  {
+    "name": "Ninevillage",
+    "type": "job",
+    "subject": "Inhaber und Entwickler",
+    "degree": "",
+    "description": "",
+    "start": "09/2011",
+    "end": ""
+  },
+  {
+    "name": "GKN GbR",
+    "type": "job",
+    "subject": "Gesellschafter und Entwickler",
+    "degree": "",
+    "description": "",
+    "start": "12/2012",
+    "end": ""
+  },
+  {
+    "name": "damn creative",
+    "type": "job",
+    "subject": "Inhaber und Entwickler",
+    "degree": "",
+    "description": "",
+    "start": "04/2014",
+    "end": ""
+  }
+]

@@ -9,10 +9,15 @@ var app = angular.module('naxmeify', []).
               controller: SkillsCtrl,
               activetab: 'skills'
           }).
-          when('/work', {
-              templateUrl: 'partials/work.html',
-              controller: WorkCtrl,
-              activetab: 'work'
+          when('/works', {
+              templateUrl: 'partials/works.html',
+              controller: WorksCtrl,
+              activetab: 'works'
+          }).
+          when('/cv', {
+              templateUrl: 'partials/cv.html',
+              controller: CVCtrl,
+              activetab: 'cv'
           }).
           when('/contact', {
               templateUrl: 'partials/contact.html',

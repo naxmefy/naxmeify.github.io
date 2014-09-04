@@ -1,6 +1,6 @@
 [
   {
-    "name": "Programmiersprachen",
+    "name": "Programming Languages",
     "items":[
       {"name":"Objective-C", "value": 100},
       {"name":"PHP", "value": 75},
@@ -11,7 +11,7 @@
       {"name":"Python", "value": 40},
       {"name":"C", "value": 70},
       {"name":"C++", "value": 50},
-      {"name":"HTML5/CSS3", "value": 95},
+      {"name":"HTML/CSS", "value": 95},
       {"name":"Lua", "value": 60},
       {"name":"C#", "value": 70},
       {"name":"Basic", "value": 50},
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "name": "Applikationen",
+    "name": "Applications",
     "items":[
       {"name":"Xcode", "value": 100},
       {"name":"AppCode", "value": 90},
@@ -53,6 +53,7 @@
       {"name":"Express", "value": 100},
       {"name":"Synth", "value": 20},
       {"name":"Socket.io", "value": 100},
+      {"name":"Meteor", "value": 10},
       {"name":"Zend", "value": 70},
       {"name":"CodeIgniter", "value": 90},
       {"name":"Django", "value": 5},
@@ -63,7 +64,7 @@
     ]
   },
   {
-    "name": "Content Management Systeme",
+    "name": "Content Management Systems",
     "items":[
       {"name":"Wordpress", "value": 90},
       {"name":"Joomla", "value": 60},
@@ -91,6 +92,110 @@
       {"name":"Kiwi.js", "value": 40},
       {"name":"Turbolenz", "value": 30},
       {"name":"Unreal Engine", "value": 20}
+    ]
+  },
+  {
+    "name": "Operating Systems",
+    "items": [
+      {"name":"Mac OSX", "value": 100},
+      {"name":"Mac OSX Server", "value": 10},
+      {"name":"Windows", "value": 60},
+      {"name":"Windows Server", "value": 40},
+      {"name":"Ubuntu", "value": 80},
+      {"name":"Suse", "value": 20},
+      {"name":"Debian", "value": 50},
+      {"name":"CentOS", "value": 50},
+      {"name":"FreeBSD", "value": 0}
+    ]
+  },
+  {
+    "name": "Databases",
+    "items": [
+      {"name":"MongoDB", "value": 100},
+      {"name":"CouchDB", "value": 30},
+      {"name":"Redis", "value": 80},
+      {"name":"MySQL", "value": 100},
+      {"name":"PostgreSQL Server", "value": 60},
+      {"name":"Micosoft SQL", "value": 60},
+      {"name":"SQLite", "value": 100}
+    ]
+  },
+  {
+    "name": "ORM / Persistence Frameworks",
+    "items": [
+      {"name":"Hibernate", "value": 60},
+      {"name":"Core Data", "value": 80},
+      {"name":"iBATIS", "value": 0},
+      {"name":"Slick Server", "value": 0}
+    ]
+  },
+  {
+    "name": "Web Frontend Frameworks",
+    "items": [
+      {"name":"Bootstrap", "value": 80},
+      {"name":"jQuery", "value": 80},
+      {"name":"Mootools", "value": 50},
+      {"name":"AngularJS", "value": 90},
+      {"name":"AngularUI", "value": 60},
+      {"name":"Backbone", "value": 80},
+      {"name":"Backbone-Marionette", "value": 70},
+      {"name":"Backbone-Chaplin", "value": 70},
+      {"name":"Underscore", "value": 70},
+      {"name":"LoDash", "value": 50},
+      {"name":"Ember", "value": 10},
+      {"name":"Knockout", "value": 0},
+      {"name":"Prototype", "value": 0},
+      {"name":"HeadJS", "value": 0}
+    ]
+  },
+  {
+    "name": "Hybrid Developer Frameworks",
+    "items": [
+      {"name":"Phonegap", "value": 70},
+      {"name":"Node-Webkit", "value": 70},
+      {"name":"Titianium", "value": 50}
+    ]
+  },
+  {
+    "name": "Continues Integration",
+    "items": [
+      {"name":"TeamCity", "value": 50},
+      {"name":"Jenkins", "value": 30},
+      {"name":"Travis", "value": 70},
+      {"name":"GitLab", "value": 100}
+    ]
+  },
+  {
+    "name": "Testing Frameworks",
+    "items": [
+      {"name":"JUnit", "value": 80},
+      {"name":"NodeUnit", "value": 40},
+      {"name":"Mocha", "value": 100},
+      {"name":"Karma", "value": 80},
+      {"name":"Jasmine", "value": 70},
+      {"name":"XCTest", "value": 100}
+    ]
+  },
+  {
+    "name": "Project Management Software",
+    "items": [
+      {"name":"JIRA", "value": 80},
+      {"name":"YouTrack", "value": 50},
+      {"name":"Team Foundation", "value": 40},
+      {"name":"Redmine", "value": 20}
+    ]
+  },
+  {
+    "name": "Project Management Types",
+    "items": [
+      {"name":"Scrum", "value": 80}
+    ]
+  },
+  {
+    "name": "Code Versioning",
+    "items": [
+      {"name":"Git", "value": 90},
+      {"name":"Subversion", "value": 40}
     ]
   }
 ]
