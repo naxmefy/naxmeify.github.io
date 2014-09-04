@@ -18,11 +18,12 @@
                 {{ entry.start }} - {{ entry.end != '' ? entry.end : 'today'}}
               </small>
               <small class="text-muted">
-                {{ entry.subject }}
+                | {{ entry.subject }}
               </small>
             </p>
           </div>
           <div class="timeline-body">
+            <h4>{{ entry.degree }}</h4>
             {{ entry.description }}
             <!-- <hr> -->
             <!-- <div class="btn-group">
