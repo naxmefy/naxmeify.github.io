@@ -1,148 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="naxmeify">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ sitetitle }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="fragment" content="!">
-    <meta name="google-site-verification" content="3SK_eEbXBonIE1ioei8UUIrdV0NWNTyFgrL_6dmMqIA" />
+---
+layout: default
+---
 
-    <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    
-    <!-- WebIcons -->
-    <link rel="stylesheet" href="icons/webicons.css">
-    
-    <!-- Nax CSS -->
-    <link rel="stylesheet" href="css/nax.css">
+<div class="home">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+  <h1 class="page-heading">Posts</h1>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-  
-    <!-- LIVERELOAD -->
-    <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')
-    </script>
-  </head>
-  <body>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-              <h1 class="text-hide hidden">Naxmeify</h1>
-              <img class="img-responsive" src="images/logo.png" alt="Naxmeify Logo">
-          </a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav"></ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/" ng-class="{activeSmall:part=='home'}">home</a></li>
-            <li><a href="/skills" ng-class="{activeSmall:part=='skills'}">my skills</a></li>
-            <li><a href="/works" ng-class="{activeSmall:part=='works'}">my works</a></li>
-            <li><a href="/cv" ng-class="{activeSmall:part=='cv'}">my cv</a></li>
-	    <li><a href="http://naxmeify.tumblr.com" target="_blank">my blog</a></li>
-            <li><a href="/contact" class="contact" ng-class="{activeSmall:part=='contact'}">contact me</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    <div id="top-shadow"></div>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <div class="container" ng-view style="min-height: 400px;"></div>
-    
-    <div class="container" id="footer">
-    	<div class="row">
-    		<div class="col-md-4">
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    		</div>
-    		<div class="col-md-4"></div>
-    		<div class="col-md-4">
-    		</div>
-    	</div>
-    	<div class="row">
-    		<div class="col-md-12">
-    			<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/76215134&amp;color=ff5500&amp;auto_play=false&amp;show_artwork=true"></iframe>
-    		</div>
-    	</div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="externalLinks">
-                    <ul>
-                        <li><a class="webicon youtube large" href="http://www.youtube.com/naxmeify">YouTube</a></li>
-                        <li><a class="webicon github large" href="https://github.com/Naxmeify">Github</a></li>
-                        <li><a class="webicon twitter large" href="https://twitter.com/Naxmeify">Twitter</a></li>
-                        <li><a class="webicon googleplus large" href="https://plus.google.com/104422916304341747149" rel="publisher">Google+</a></li>
-                        <li><a class="webicon soundcloud large" href="https://soundcloud.com/Naxmeify">Soundcloud</a></li>
-                        <li><a class="webicon deviantart large" href="http://naxmeify.deviantart.com/">DeviantArt</a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="avatar">
-                    <img src="images/avatar.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="links">
-                    <a id="quoteBtn" href="#!/contact" ng-class="{activeSmall:part=='contact'}">request a quote</a>
-                </div>
-            </div>
-        </div>
-        <div style="clear:both"></div>
-        <div class="copyright">Copyright &copy; 2013-2014 Nax(meify) - M. R. W. Neundorf</div>
-    </div>
-    
-
-
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.autogrow-textarea.js"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script>
-        $(document).ready(function(){
-         $(window).scroll(function(){
-          var y = $(window).scrollTop();
-          if( y > 0 ){
-              $("#top-shadow").css({'display':'block', 'opacity':y/20});
-          } else {
-              $("#top-shadow").css({'display':'block', 'opacity':y/20});
-          }
-         });
-        })
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-27498828-2', 'nax.me');
-      ga('send', 'pageview');
-
-    </script>
-    
-    <script src="js/app/angular.min.js"></script>
-    
-    <script src="js/app/app.js"></script>
-    <script src="js/app/services.js"></script>
-    <script src="js/app/directives.js"></script>
-    <script src="js/app/controllers.js"></script>
-  </body>
-</html>
+</div>

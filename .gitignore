@@ -1,9 +1,11 @@
-*.swp
-*.swo
+_site
 .sass-cache
-.local
-*.DS_Store
 
-mailapi
+# IDEA
+.idea/
 
-node_modules
+# Cloud9
+.c9/*
+!.c9/runners/JekyllServe.run
+
+old/
