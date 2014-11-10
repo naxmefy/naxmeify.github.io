@@ -28,11 +28,11 @@
         </div>
         <div class="col-md-4">
             <div class="avatar">
-                <img src="images/avatar.png" alt="">
+                <img src="{{ '/images/avatar.png' | prepend: site.baseurl }}" alt="">
             </div>
         </div>
         <div class="col-md-4">
-            <div class="links">
+            <div class="links hidden">
                 <a id="quoteBtn" href="#!/contact" ng-class="{activeSmall:part=='contact'}">request a quote</a>
             </div>
         </div>
