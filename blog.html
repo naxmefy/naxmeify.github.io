@@ -1,6 +1,24 @@
 ---
-layout: page
+layout: blog
 title: Blog
 nav: true
 permalink: /blog/
 ---
+
+
+{% for post in site.posts %}
+  <h3>
+    {{ post.title }}
+    <small> <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> </small>
+  </h3>
+  
+  <p>
+    {{ post.preview }}
+  </p>
+  
+  <div class="pull-right">
+    <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+  </div>
+{% endfor %}
+
+<!-- TODO: PAGINATION -->

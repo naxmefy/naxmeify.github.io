@@ -456,21 +456,26 @@ body {
 }
 
 .responsive-video {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 60px; overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px; overflow: hidden;
 }
 
 
 .responsive-video iframe,
 .responsive-video object,
 .responsive-video embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-max-width: 100%;
-min-width: 180px;
-width: 520px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 180px;
+    width: 520px;
+}
+
+.sidebar {
+    border: 1px solid #DDD;
+    border-radius: 10px;
 }
