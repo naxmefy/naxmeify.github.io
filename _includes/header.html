@@ -17,11 +17,15 @@
       <ul class="nav navbar-nav"></ul>
       <ul class="nav navbar-nav navbar-right">
         {% assign pages = site.pages | sort:"weight"  %}
-        {% for page in pages %}
-          {% if page.title and page.nav %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}" ng-class="{activeSmall:part=='home'}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+          {% for node in pages %}
+            {% if node.title and node.nav %}
+              {% if page.url == node.url %}
+                <li class="active"><a class="active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+              {% else %}
+                <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         <!--<li><a href="/" ng-class="{activeSmall:part=='home'}">home</a></li>-->
         <!--<li><a href="/skills" ng-class="{activeSmall:part=='skills'}">my skills</a></li>-->
         <!--<li><a href="/works" ng-class="{activeSmall:part=='works'}">my works</a></li>-->
