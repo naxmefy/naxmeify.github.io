@@ -16,7 +16,8 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav"></ul>
       <ul class="nav navbar-nav navbar-right">
-        {% for page in site.pages %}
+        {% assign pages = site.pages | sort:"weight"  %}
+        {% for page in pages %}
           {% if page.title and page.nav %}
           <li><a href="{{ page.url | prepend: site.baseurl }}" ng-class="{activeSmall:part=='home'}">{{ page.title }}</a></li>
           {% endif %}

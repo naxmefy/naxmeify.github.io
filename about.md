@@ -3,6 +3,7 @@ layout: page
 title: About
 nav: true
 permalink: /about/
+weight: 20
 ---
 
 About Nax ;)

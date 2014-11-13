@@ -5,7 +5,7 @@ _site
 .idea/
 
 # Cloud9
-.c9/*
-!.c9/runners/JekyllServe.run
+/.c9/*
+!/.c9/runners/
 
 old/
