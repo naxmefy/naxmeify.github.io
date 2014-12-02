@@ -98,7 +98,8 @@ body {
 
 .links {
     text-align:center;
-    margin: 86px 0;
+    margin: 60px 0;
+    line-height: 45px;
 }
 
 .links a {
