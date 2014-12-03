@@ -23,7 +23,7 @@ weight: 10
               {{ post.title }}
               <small> <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> </small>
             </h4>
-            <p class="list-group-item-text">{{ post.preview }}</p>
+            <p class="list-group-item-text">{{ post.excerpt }}</p>
           </a>
         </div>
       {% endfor %}

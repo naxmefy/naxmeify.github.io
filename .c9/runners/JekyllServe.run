@@ -5,7 +5,7 @@
         "bash", 
         "--login", 
         "-c",
-        "cd $project_path && ls -al && jekyll serve --host $IP --port $port --watch"
+        "cd $project_path && ls -al && jekyll serve --host $IP --port $port --watch --drafts"
     ],
     "info" : "Serve $project_path",
     "env" : {}
