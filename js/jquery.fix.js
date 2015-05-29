@@ -20,8 +20,9 @@ jQuery(function() {
       var value = $(element).val().toLowerCase();
       $('#'+id+' .item').each(function(index, element) {
         var name = $(element).find('.name').text().toLowerCase();
+        var tags = $(element).find('.tags').text().toLowerCase();
         if(value.length > 0) {
-          if((name.indexOf(value) !== -1)) {
+          if((name.indexOf(value) !== -1 || tags.indexOf(value) !== -1)) {
             $(element).show();
           } else {
             $(element).hide();

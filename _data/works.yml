@@ -1,15 +1,21 @@
-- name: 'LALA'
+- name: 'sonea'
   date: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   imgAlt:
   text: >
-    Lorem Ipsum
+    sonea is web framework. I develop it in my spare time...
   tags:
-    'App': 'primary'
-    'Web': 'danger'
+  - 'Node'
+  - 'CoffeeScript'
+  - 'Web'
+  - 'Framework'
+  - 'NPM Module'
     
-- name: 'LULU'
+- name: 'node-git-fame'
   date: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
+  tags:
+  - 'Node'
+  - 'NPM Module'
