@@ -30,8 +30,8 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-size: 1.4em;
-    border-radius: 24px;
+    /*font-size: 1.4em;*/
+    /*border-radius: 24px;*/
     padding: 10px 12px;
 }
 

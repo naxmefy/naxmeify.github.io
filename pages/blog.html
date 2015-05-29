@@ -8,18 +8,24 @@ weight: 30
 
 
 {% for post in site.posts %}
-  <h3>
-    {{ post.title }}
-    <small> <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> </small>
-  </h3>
-  
-  <p>
-    {{ post.excerpt }}
-  </p>
-  
-  <div class="pull-right">
-    <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
+      </a>
+      <small> <span class="post-meta pull-right">{{ post.date | date: "%b %-d, %Y" }}</span> </small>
+    </h3>
   </div>
+  <div class="panel-body">
+    <p>
+      {{ post.excerpt }}
+    </p>
+    
+    <a class="btn btn-primary btn-sm pull-right" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+    <div class="clearfix"></div>
+  </div>
+</div>
 {% endfor %}
 
 <!-- TODO: PAGINATION -->
