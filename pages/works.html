@@ -5,3 +5,29 @@ nav: true
 permalink: /works/
 weight: 60
 ---
+<section id="works">
+  <div class="col-md-12">
+    <input type="text" class="form-control" placeholder="Work search..." id="worksFilter" />
+  </div>
+  <div class="clearfix margin-bottom"></div>
+  {% for work in site.data.works %}
+    <div class="item col-xs-12 col-md-3 col-sm-4">
+      <div class="thumbnail">
+        <img src="{{ work.img }}" alt="{{ work.imgAlt }}" />
+        <div class="caption">
+          <h3 class="name">
+            {{ work.name }}
+          </h3>
+          <p class="text">
+            {{ work.text }}
+          </p>
+          <div class="tags">
+            {% for tag in work.tags %}
+              <span class="label label-{{ tag[1] }}">{{ tag[0] }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
