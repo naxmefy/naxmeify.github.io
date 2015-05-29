@@ -1,0 +1,28 @@
+---
+layout: page
+title: Redirect...
+permalink: /redirect/
+nav: false
+---
+
+<p>
+  You will be redirected. If it doesn't you can click
+  <a href="#" id="target">here</a>
+</p>
+
+
+<script type="text/javascript">
+  function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+  
+  var target = getParameterByName("target");
+  $('#target').attr('href', target);
+  setTimeout(function() {
+    // window.location = target;
+  }, 3000);
+  
+</script>

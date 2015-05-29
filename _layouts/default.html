@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+{% if page.with_angular %}
+  <html data-ng-app="NaxmeifyApp">
+{% else %}
+  <html>
+{% endif %}
 
   {% include head.html %}
 

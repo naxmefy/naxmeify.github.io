@@ -3,6 +3,8 @@
 
 <script src="{{ "/vendor/jquery/jquery.autogrow-textarea.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/vendor/jquery/jquery.mixitup.min.js" | prepend: site.baseurl }}"></script>
+
+<script src="{{ "/js/jquery.fix.js" | prepend: site.baseurl }}"></script>
 <script>
     $(document).ready(function(){
      $(window).scroll(function(){
@@ -25,3 +27,11 @@
   ga('send', 'pageview');
 
 </script>
+
+{% for js in page.extra_js %}
+  {% if js.locale %}
+    <script src="{{ js.src | prepend: site.baseurl }}"></script>
+  {% else %}
+    <script type="text/javascript" src="{{ js.src }}"></script>
+  {% endif %}
+{% endfor %}
