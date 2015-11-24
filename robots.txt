@@ -387,4 +387,4 @@ Disallow: /
 User-agent: ScoutJet
 Disallow: /
 
-Sitemap: http://nax.me/sitemap.txt
+Sitemap: http://www.nax.me/sitemap.txt
