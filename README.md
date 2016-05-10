@@ -1,7 +1,7 @@
 nax.me
 =====
 
-my website.
+my website. build with jekyll.
 
 ## setup
 
