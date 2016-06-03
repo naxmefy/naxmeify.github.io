@@ -17,23 +17,27 @@ jQuery(function() {
     $('#'+id+'Filter').keyup(function(event) {
       event.preventDefault();
       var element = event.currentTarget;
-      var values = $(element).val().toLowerCase().split(' ');
-      $('#'+id+' .item').each(function(index, element) {
-        var name = $(element).find('.name').text().toLowerCase();
-        var tags = $(element).find('.tags').text().toLowerCase();
-        if(values.length > 0) {
-          for(var i = 0; i < values.length; i++) {
-            var value = values[i];
+      var values = $(element).val().length > 0 ? $(element).val().toLowerCase().split(' ') : [];
+      
+      if(values.length < 1) {
+        $('#'+id+' .group').show();
+        $('#'+id+' .item').show();
+      } else {
+        $('#'+id+' .group').hide();
+        $('#'+id+' .item').hide();
+        
+        for(var i = 0; i < values.length; i++) {
+          var value = values[i];
+          $('#'+id+' .item').each(function(index, element) {
+            var name = $(element).find('.name').text().toLowerCase();
+            var tags = $(element).find('.tags').text().toLowerCase();
             if((name.indexOf(value) !== -1 || tags.indexOf(value) !== -1)) {
+              $(element).parent().find('.group').show();
               $(element).show();
-            } else {
-              $(element).hide();
             }
-          }
-        } else {
-          $(element).show();
+          });
         }
-      });
+      }
     });
   }
 
