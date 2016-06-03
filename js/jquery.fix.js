@@ -17,15 +17,18 @@ jQuery(function() {
     $('#'+id+'Filter').keyup(function(event) {
       event.preventDefault();
       var element = event.currentTarget;
-      var value = $(element).val().toLowerCase();
+      var values = $(element).val().toLowerCase().split(' ');
       $('#'+id+' .item').each(function(index, element) {
         var name = $(element).find('.name').text().toLowerCase();
         var tags = $(element).find('.tags').text().toLowerCase();
-        if(value.length > 0) {
-          if((name.indexOf(value) !== -1 || tags.indexOf(value) !== -1)) {
-            $(element).show();
-          } else {
-            $(element).hide();
+        if(values.length > 0) {
+          for(var i = 0; i < values.length; i++) {
+            var value = values[i];
+            if((name.indexOf(value) !== -1 || tags.indexOf(value) !== -1)) {
+              $(element).show();
+            } else {
+              $(element).hide();
+            }
           }
         } else {
           $(element).show();
