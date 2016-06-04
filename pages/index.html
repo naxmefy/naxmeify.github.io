@@ -37,25 +37,38 @@ weight: 10
     </div>
   </div>
   <div class="col-md-6">
+    <div class="row">
+      <h4>LiveCodingTv</h4>
+      <iframe src="https://www.livecoding.tv/naxmefy/embed" width="560" height="315" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+    </div>
+    
+    <div class="row">
+      <h4>Twitch.tv</h4>
+      <iframe src="https://player.twitch.tv/?channel=naxmefy" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/naxmefy?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from naxmefy on www.twitch.tv</a>
+    </div>
+    
+    <!--<div class="row">-->
     <!-- Youtube -->
-    <h4>Latest Videos <small>(in german)</small></h4>
-    <div id="static_videos"></div>
-    <script type="text/javascript">
-        $(function() {
-          $.get('https://gdata.youtube.com/feeds/api/users/naxmefy/uploads?max-results=3&orderby=published&v=2&alt=jsonc')
-          .success(function(response) {
-            if(response.data && response.data.items) {
-              var items = response.data.items;
-              if(items.length>0) {
-                $.each(items, function(key, item) {
-                  var videoid = "http://www.youtube.com/embed/"+item.id;
-                  var video = "<div class='row responsive-video' style='margin: 5px;'><iframe width='560' height='315' src='"+videoid+"' frameborder='0' allowfullscreen></iframe></div>";
-                  $(video).appendTo($('#static_videos'));
-                });
-              }
-            }
-          });
-        });
-    </script>
+    <!--  <h4>YouTube <small>(in german)</small></h4>-->
+    <!--  <div id="static_videos"></div>-->
+    <!--  <script type="text/javascript">-->
+    <!--      $(function() {-->
+    <!--        $.get('https://www.youtube.com/feeds/videos.xml?channel_id=UC6-yFEaDOGrEaGxRiG5KiLA')-->
+    <!--        .success(function(response) {-->
+    <!--          console.log(response);-->
+    <!--          if(response.data && response.data.items) {-->
+    <!--            var items = response.data.items;-->
+    <!--            if(items.length>0) {-->
+    <!--              $.each(items, function(key, item) {-->
+    <!--                var videoid = "http://www.youtube.com/embed/"+item.id;-->
+    <!--                var video = "<div class='row responsive-video' style='margin: 5px;'><iframe width='560' height='315' src='"+videoid+"' frameborder='0' allowfullscreen></iframe></div>";-->
+    <!--                $(video).appendTo($('#static_videos'));-->
+    <!--              });-->
+    <!--            }-->
+    <!--          }-->
+    <!--        });-->
+    <!--      });-->
+    <!--  </script>-->
+    <!--</div>-->
   </div>
 </div>
