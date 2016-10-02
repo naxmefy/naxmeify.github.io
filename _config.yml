@@ -1,12 +1,12 @@
 # Site settings
-title: Naxmeify <Nax aka Matt>
-email: matt@nax.me
+title: naxmefy <Nax aka Matt>
+email: m.neundorf@live.de
 description: > # this means to ignore newlines until "baseurl:"
   MRW Neundorf aka Matt aka Nax. Web, Mobile, Desktop Developer. Business, Games and much more.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.nax.me" # the base hostname & protocol for your site
-twitter_username: Naxmeify
-github_username:  Naxmeify
+url: "https://naxmefy.github.io" # the base hostname & protocol for your site
+twitter_username: naxmefy
+github_username:  naxmefy
 
 # Build settings
 markdown: kramdown
