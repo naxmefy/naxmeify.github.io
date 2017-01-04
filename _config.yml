@@ -4,7 +4,7 @@ email: m.neundorf@live.de
 description: > # this means to ignore newlines until "baseurl:"
   MRW Neundorf aka Matt aka Nax. Web, Mobile, Desktop Developer. Business, Games and much more.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://nax.me" # the base hostname & protocol for your site
+url: "http://www.nax.me" # the base hostname & protocol for your site
 twitter_username: naxmefy
 github_username:  naxmefy
 
