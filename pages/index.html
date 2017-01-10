@@ -17,7 +17,7 @@ weight: 10
     <div class="row">
       <div class="col-md-12">
         <!-- Posts -->
-        <h4><a href="/blog">Latest Posts</a></h4>
+        <h4><a href="/blog">Latest Blog Posts</a></h4>
         {% for post in site.posts %}
         <div class="list-group">
           <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item">
@@ -37,8 +37,11 @@ weight: 10
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         <latest-github-activities></latest-github-activities>
+      </div>
+      <div class="col-md-6">
+        <latest-gists></latest-gists>
       </div>
     </div>
   </div>
