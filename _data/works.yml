@@ -1,5 +1,6 @@
 - name: 'sonea'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate:
   img: 'http://placehold.it/350x250'
   imgAlt:
   text: >
@@ -10,9 +11,10 @@
   - 'Web'
   - 'Framework'
   - 'NPM Module'
-    
+
 - name: 'node-git-fame'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
@@ -21,52 +23,58 @@
   - 'NPM Module'
 
 - name: 'node-git-fame'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
   tags:
   - 'Node'
   - 'NPM Module'
-  
+
 - name: 'node-git-fame'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
   tags:
   - 'Node'
   - 'NPM Module'
-  
+
 - name: 'node-git-fame'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
   tags:
   - 'Node'
   - 'NPM Module'
-  
+
 - name: 'node-git-fame'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
   tags:
   - 'Node'
   - 'NPM Module'
-  
+
 - name: 'node-git-fame'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
   tags:
   - 'Node'
   - 'NPM Module'
-  
+
 - name: 'node-git-fame'
-  date: '2012-01-01 00:00:00 +1'
+  startdate: '2012-01-01 00:00:00 +1'
+  enddate: '2012-01-01 00:00:00 +1'
   img: 'http://placehold.it/350x250'
   text: >
     Lorem Ipsum
