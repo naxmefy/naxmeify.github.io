@@ -1,6 +1,0 @@
-{
-  "private": true,
-  "scripts": {
-    "start": "jekyll serve"
-  }
-}

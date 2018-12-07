@@ -1,11 +1,4 @@
 _site
 .sass-cache
 
-# IDEA
-.idea/
-
-# Cloud9
-/.c9/*
-!/.c9/runners/
-
 old/
