@@ -2,7 +2,7 @@
 layout: post
 title:  "Deploy Angular Application on Wildfly Server"
 date:   2018-12-07 20:00:00
-categories: angular, wildfly, deploy
+tags: angular, wildfly, deploy
 ---
 
 Let's deploy an angular application on a wildfly server. Let's get started.
@@ -53,13 +53,13 @@ $ ng new my-awesome-application
 $ mkdir -p src/main/webapp/WEB-INF
 
 # a jboss web xml required if you want to specify the context-root of the application
-$ touch jboss-web.xml 
+$ touch src/main/webapp/WEB-INF/jboss-web.xml 
 
 # just to setup the welcome file
-$ touch web.xml
+$ touch src/main/webapp/WEB-INF/web.xml
 
 # html5 mode magic
-$ touch undertow-handlers.conf
+$ touch src/main/webapp/WEB-INF/undertow-handlers.conf
 ```
 
 ## 4. set context-root in jboss-web.xml
@@ -79,7 +79,7 @@ $ touch undertow-handlers.conf
 </jboss-web>
 ```
 
-## 5. web.xml
+## 5. setup web.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -97,7 +97,7 @@ $ touch undertow-handlers.conf
 
 > remember the defined location **/resources** (it means -> **src/main/webapp/resources**)
 
-## 6. undertow-handlers.conf
+## 6. setup undertow-handlers.conf
 
 ```
 path-prefix('/api') -> done
@@ -107,3 +107,40 @@ path-prefix('/') -> rewrite('/')
 
 1. first prefix is only required if you want use a custom backend in your application (not angular) e.g. jax-rs
 2. if you have other files (css, fonts, etc) you have to add more rules like the second e.g. **path-suffix('.etc') -> done**
+3. the third line is our catch all handler to route all other matching routes to our welcome file (it makes HTML5 Mode possible)
+
+## 7. update angular.json
+
+u have to add 2 more properties and update 1 property under:
+``` projects > my-awesome-application > architect > build > options ```
+
+* **update** - outputPath - should point to ``` src/main/webapp/resources ``` **HINT: THIS FOLDER WILL BE CLEARED FOR EVERY ANGULAR BUILD**
+* **add** - baseHref - this must be the context root of your application, e.g.:
+  * if jboss-web.xml is like step 4 ``` "baseHref": "/my-aweosome-application/" ```
+  * if no context root is specified ``` "baseHref": "/${project.artifactId}-${project.version}/" ``` e.g. ``` "baseHref": "/${my-awesome-application}-${1.0-SNAPSHOT}/" ```
+* **add** - deployUrl - this must be the relative path from context-root to the resources folder - its required for source linking - our ``` outputPath ``` ends up in the
+resources folder - deployUrl have to be ``` "deployUrl": "resources/" ``` **HINT: Path separator suffix is required...**
+
+**here an example**
+
+```json
+{
+  // ...
+  "projects": {
+    "my-awesome-application": {
+      // ...
+      "architect": {
+        "build": {
+          // ...
+          "options": {
+            "outputPath": "dist",
+            "baseHref": "/my-awesome-application/",
+            "deployUrl": "resources/",
+            // ...
+          }, // ...
+        }, // ...
+      }, // ...
+    }, // ...
+  }, // ...
+}, // ...
+```
