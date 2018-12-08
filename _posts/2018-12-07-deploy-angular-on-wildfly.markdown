@@ -2,7 +2,7 @@
 layout: post
 title:  "Deploy Angular Application on Wildfly Server"
 date:   2018-12-07 20:00:00
-tags: angular, wildfly, deploy
+tags: [angular, wildfly, deploy]
 ---
 
 Let's deploy an angular application on a wildfly server. Let's get started.

@@ -29,6 +29,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# excerpt_separator: <!--more-->
+
 header_pages:
   - about.md
 
