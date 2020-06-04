@@ -16,7 +16,7 @@ git add -A
 git commit -m "Deploy $GITHUB_SHA"
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:naxmefy/naxmefy.github.io.git master:gh-pages
+git push -f https://naxmefy:$GITHUB_TOKEN@github.com/naxmefy/naxmefy.github.io.git master:gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
