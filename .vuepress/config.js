@@ -6,6 +6,9 @@ module.exports = {
   plugins: {
     sitemap: {
       hostname: 'https://nax.me'
+    },
+    robots: {
+      host: 'https://nax.me'
     }
   }
 }

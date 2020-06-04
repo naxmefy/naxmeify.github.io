@@ -5,6 +5,7 @@
     "build": "vuepress build"
   },
   "dependencies": {
+    "vuepress-plugin-robots": "^1.0.1",
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "devDependencies": {
