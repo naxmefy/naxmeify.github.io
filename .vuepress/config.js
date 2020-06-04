@@ -9,6 +9,9 @@ module.exports = {
     },
     robots: {
       host: 'https://nax.me'
+    },
+    '@vuepress/google-analytics': {
+      ga: 'UA-27498828-5'
     }
   }
 }
