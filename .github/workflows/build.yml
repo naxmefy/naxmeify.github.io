@@ -14,4 +14,4 @@ jobs:
 
       - run: yarn
       - run: yarn build
-      - run: ./.github/workflows/deploy.sh
+      - run: sh .github/workflows/deploy.sh
