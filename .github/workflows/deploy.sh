@@ -10,8 +10,10 @@ cd .vuepress/dist
 # echo 'www.example.com' > CNAME
 
 git init
+git config --local user.email "action@github.com"
+git config --local user.name "GitHub Action"
 git add -A
-git commit -m "deploy $GITHUB_SHA"
+git commit -m "Deploy $GITHUB_SHA"
 
 # if you are deploying to https://<USERNAME>.github.io
 git push -f git@github.com:naxmefy/naxmefy.github.io.git master:gh-pages
