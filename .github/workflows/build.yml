@@ -15,5 +15,7 @@ jobs:
       - run: yarn
       - run: yarn build
       - run: sh .github/workflows/deploy.sh
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_SHA: ${{ github.sha }}
