@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: https:/nax.me/sitemap.xml
+Host: https://nax.me
